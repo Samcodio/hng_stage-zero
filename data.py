@@ -12,7 +12,7 @@ setup_cors(app)
 def get_info():
     return (
         f"email: nosikesamuel1@gmail.com\n"
-        f"current_time: {datetime.now(pytz.utc).isoformat()}\n"
+        f"current_datetime: {datetime.now(pytz.utc).isoformat()}\n"
         f"github_url: https://github.com/Samcodio/hng_stage-zero"
     )
 

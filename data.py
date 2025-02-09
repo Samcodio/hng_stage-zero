@@ -10,10 +10,11 @@ setup_cors(app)
 
 @app.get("/", response_class=PlainTextResponse)
 def get_info():
+    current_time = datetime.now(pytz.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     return (
-        f"email: nosikesamuel1@gmail.com\n"
-        f"current_datetime: {datetime.now(pytz.utc).isoformat()}\n"
-        f"github_url: https://github.com/Samcodio/hng_stage-zero"
+        "email:" "nosikesamuel1@gmail.com\n"
+        "current_datetime:" f"{current_time}\n"
+        "github_url:" "https://github.com/Samcodio/hng_stage-zero"
     )
 
 
